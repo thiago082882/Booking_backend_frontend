@@ -6,6 +6,7 @@ const useFetch = (url)=>{
     const [ loading,setLoading] = useState(false);
     const [ error,setError] = useState(false);
   
+axios.defaults.baseURL = 'http://localhost:8800/api'
 
     useEffect(()=>{
 const fetchData = async()=>{
